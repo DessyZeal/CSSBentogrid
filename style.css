@@ -66,3 +66,16 @@ body {
 .grid_item:nth-of-type(1) {
     background-color: var(--Yellow-100);
 }
+.grid_item:nth-of-type(2) {
+    background-color: var(--Purple-500);
+    color: var(--White);
+}
+.grid_item:nth-of-type(3) {
+    background-color: var(--Purple-100);
+}
+.grid_item:nth-of-type(4) {
+    background-color: var(--Yellow-500);
+}
+.emp {
+    color: var(--Yellow-500);
+}
