@@ -40,3 +40,29 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
 }
+.bento_container {
+    max-width: 1400px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 75px;
+    margin: 1rem;
+    gap: 2rem;
+    grid-template-areas: 
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box5 box6 box3"
+    "box4 box5 box6 box3"
+    "box4 box5 box6 box3"
+    "box4 box7 box8 box8"
+    "box4 box7 box8 box8"
+    "box4 box7 box8 box8";
+}
+.grid_item {
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.grid_item:nth-of-type(1) {
+    background-color: var(--Yellow-100);
+}
