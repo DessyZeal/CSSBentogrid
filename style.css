@@ -20,7 +20,7 @@ img {
 body {
     background-color: #f9f9f9;
     font-family: "DM Sans", sans-serif;
-    min-height: 100vh;
+    min-height: 100%;
     display: grid;
     place-content: center;
 }
@@ -43,10 +43,10 @@ body {
 .bento_container {
     max-width: 1400px;
     display: grid;
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 75px;
     margin: 1rem;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-areas: 
     "box1 box2 box2 box3"
     "box1 box2 box2 box3"
@@ -87,13 +87,14 @@ body {
 }
 .bento_container .grid_item:nth-of-type(1){
     grid-area: box1;
-    padding: 6rem 2rem 0 2.5rem;
+    padding: 5rem 2rem 0 2.5rem;
 }
 .bento_container .grid_item:nth-of-type(1) em{
     color: var(--Purple-500);
 }
 .bento_container .grid_item:nth-of-type(1) img{
     margin-top: 1rem;
+    margin-bottom: 7rem;
 }
 .bento_container .grid_item:nth-of-type(2){
     grid-area: box2;
@@ -106,12 +107,11 @@ body {
     justify-content: center;
 }
 .bento_container .grid_item:nth-of-type(2) img{
-    /* margin-top: 1rem; */
     width: 250px;
 }
 .bento_container .grid_item:nth-of-type(3){
     grid-area: box3;
-    padding: 2.7rem 2rem 2.5rem;
+    padding: 2.7rem 2rem 2.5rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,23 +119,47 @@ body {
 }
 .bento_container .grid_item:nth-of-type(3) img {
     position: absolute;
-    height: 400px;
-    /* object-fit: cover; */
+    height: 410px;
+    object-fit: cover;
     object-position: left;
     top: 150px;
+    margin-top: 5rem;
 }
 .bento_container .grid_item:nth-of-type(4){
     grid-area: box4;
+    padding: 1.75rem 2.25rem;
+}
+.bento_container .grid_item:nth-of-type(4) p {
+    margin-bottom: 3rem;
 }
 .bento_container .grid_item:nth-of-type(5){
     grid-area: box5;
+    padding: 1rem 2rem 1rem 2rem;
+    position: relative;
+}
+.bento_container .grid_item:nth-of-type(5) p {
+    margin-top: 5rem;
+}
+.bento_container .grid_item:nth-of-type(5) img {
+    position: absolute;
+    object-position: left;
 }
 .bento_container .grid_item:nth-of-type(6){
     grid-area: box6;
+    position: relative;
+    padding: 1rem 1.75rem;
+}
+.bento_container .grid_item:nth-of-type(6) p {
+    margin-bottom: 4rem;
 }
 .bento_container .grid_item:nth-of-type(7){
     grid-area: box7;
+    padding: 1rem;
+}
+.bento_container .grid_item:nth-of-type(7) span {
+    display: block;
+
 }
 .bento_container .grid_item:nth-of-type(8){
     grid-area: box8;
-}
+} */
